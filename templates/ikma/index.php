@@ -128,8 +128,14 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/lib/fon
                 <div class="bg">
                     <div class="bg-top-shadow">
                         <div class="main">
+							
+
                             <div class="gallery p3">
+								<?php
+							if( 'com_content' == $option && 'category' == $view && 'blog' == $layout): 
+							?>
                             	<div class="wrapper indent-bot">
+									
                                     <div id="gallery" class="content">
                                        <div class="wrapper">
                                            <div class="slideshow-container">
@@ -185,6 +191,7 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/lib/fon
                                         </ul>
                                     </div>
                                 </div>
+								<?php endif; ?>
                                 <div class="inner">
                                     <div class="wrapper">
                                        
@@ -198,7 +205,9 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/lib/fon
                                     </div>
                                 </div>
                             </div>
-                            <div class="container_12">
+                            
+							
+							<div class="container_12">
                             	<div class="wrapper">
                                 	<article class="grid_12">
                                     	<h3 class="color-1">Our Services List</h3>

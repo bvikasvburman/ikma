@@ -37,7 +37,7 @@ $templateparams = $app->getTemplate(true)->params;
 	<ul class="actions">
 		<?php if ($params->get('show_print_icon')) : ?>
 		<li class="print-icon">
-			<?php echo JHtml::_('icon.print_popup', $this->item, $params, array(), true); ?>
+			<?php echo JHtml::_('icon.print_popup', $this->item, $params, array('class'=>'fa fa-download'), true); ?>
 		</li>
 		<?php endif; ?>
 		<?php if ($params->get('show_email_icon')) : ?>
